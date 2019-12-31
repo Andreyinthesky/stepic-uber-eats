@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
-  <link rel="stylesheet" href="./site.scss">
-  <title>Uber Eats</title>
-</head>
-<body>
-  <header>
-
-  </header>
-  <div class="btn-up"></div>
-  <main>
-
-  </main>
-  <footer>
-
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css" />
+    <link rel="stylesheet" href="./site.css" />
+    <title>Uber Eats</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="row middle-xs between-xs">
+        <a href="#">
+          <img src="media/restaurant/logo.svg" alt="homepage" />
+        </a>
+        <nav>
+          <ul class="row middle-xs between-xs">
+            <li>
+              <a class="link-login">Войти</a>
+            </li>
+            <li>
+              <a class="link-basket">
+                <img src="media/restaurant/basket.svg" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="btn-up"></div>
+    <main class="main">
+      <div class="row">
+        <input class="search col-md" type="text" placeholder="Поиск по ресторанам и кухням" />
+      </div>
+      <p>Рестораны в Москве</p>
+      <div class="rest-container">
+        <div class="row between-xs">
+          <div class="rest-card col-md-4"></div>
+          <div class="rest-card col-md-4"></div>
+          <div class="rest-card col-md-4"></div>
+        </div>
+        <div class="row">
+          <div class="rest-card col-md-4"></div>
+          <div class="rest-card col-md-4"></div>
+          <div class="rest-card col-md-4"></div>
+        </div>
+        <div class="row">
+          <div class="rest-card col-md-4"></div>
+          <div class="rest-card col-md-4"></div>
+          <div class="rest-card col-md-4"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </body>
 </html>
