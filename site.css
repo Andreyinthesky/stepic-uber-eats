@@ -48,16 +48,13 @@ h4 {
 }
 
 .link-basket {
+  padding: 24px 8px;
   border: none;
   cursor: pointer;
   user-select: none;
 }
 
-/* TODO: margin 0 */
 .header {
-  background-color: inherit;
-  padding: 16px 80px;
-  margin: 0;
   position: fixed;
   top: 0px;
   left: 0px;
