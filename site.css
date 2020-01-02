@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  background-color: #fff;
+  color: #1d1d1d;
 }
 
 a {
@@ -14,8 +16,8 @@ a {
   font-family: Roboto, sans-serif;
   font-weight: normal;
   font-style: normal;
-  background-color: #fff;
-  color: #1d1d1d;
+  background-color: inherit;
+  color: inherit;
 }
 
 body {
@@ -23,15 +25,39 @@ body {
   padding: 0;
 }
 
-.rest-card {
-  height: 366px;
-  margin-top: 8px;
-  border: 2px solid olive;
+h4 {
+  font-size: 22px;
+  margin-bottom: 0px;
 }
 
+/* HEADER */
+
+.link-login {
+  padding: 14px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.link-login:hover {
+  background-color: #f2f2f2;
+}
+
+.link-basket {
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* TODO: margin 0 */
 .header {
   background-color: inherit;
   padding: 16px 80px;
+  margin: 0;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -56,6 +82,71 @@ body {
   margin-left: 16px;
 }
 
+/* MAIN */
+
+.main {
+  margin-top: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+/* .rest-container {
+  margin: 0;
+} */
+
+.rest-card {
+  height: 366px;
+  margin-top: 16px;
+  padding: 0 8px;
+  border: 1px solid olive;
+}
+
+.rest-card-container {
+  cursor: pointer;
+  height: 100%;
+}
+
+.rest-card-container:hover {
+  background-color: #f2f2f2;
+}
+
+.rest-card h5 {
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 2px;
+  line-height: 24px;
+}
+
+.rest-card ul {
+  display: inline-block;
+  font-size: 14px;
+  color: #626262;
+  padding: 0;
+  margin: 2px 0;
+  line-height: 21px;
+}
+
+.rest-card li {
+  margin: 2px 0;
+  display: inline;
+  list-style: none;
+}
+
+.rest-card li:not(:first-child)::before {
+  content: "• ";
+}
+
+.rest-card p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.rest-card img {
+  display: block;
+  width: 100%;
+  max-height: 256px;
+}
+
 .search {
   border: none;
 }
@@ -68,28 +159,7 @@ body {
   border: none;
 }
 
-.link-login {
-  padding: 14px 20px;
-  border: 1px solid #e0e0e0;
-  border-radius: 2px;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 12px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.link-basket {
-  border: none;
-  cursor: pointer;
-  user-select: none;
-}
-
-.main {
-  margin-top: 100px;
-  padding-left: 80px;
-  padding-right: 80px;
-}
+/* FOOTER */
 
 .footer {
   margin-top: 16px;
