@@ -158,7 +158,93 @@ h4 {
 
 .footer {
   margin-top: 16px;
-  padding: 16px 80px;
-  height: 300px;
-  background-color: rgb(53, 45, 45);
+  padding-top: 16px;
+  background-color: #262626;
+  color: #fff;
+  font-size: 13px;
+}
+
+.footer-section {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.select-lang {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  padding: 12px 8px;
+  margin-bottom: 8px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 15px;
+  background: url(media/restaurant/select-arrow.svg) no-repeat 96% center;
+  background-color: #3b3b3b;
+  border: none;
+  cursor: pointer;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer-section-rights {
+  font-size: 11px;
+}
+
+.social {
+  margin-top: 24px;
+}
+
+.hashtag {
+  font-size: 16px;
+}
+
+.hashtag::before {
+  content: "#";
+  color: #49A144;
+}
+
+.footer-list-socials,
+.footer-list-links,
+.footer-list-rights,
+.footer-sublist-links,
+.footer-list-mobileapps {
+  padding: 0;
+}
+
+.footer-list-socials-item {
+  display: inline;
+}
+
+.footer-list-socials-item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.footer-list-links-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.footer-sublist-links-item:not(:first-child) {
+  margin-top: 24px;
+}
+
+.footer-list-mobileapps-item img {
+  display: block;
+}
+
+.footer-list-mobileapps-item:not(:first-child) {
+  margin-left: 5%;
+}
+
+.footer-list-rights {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer-list-rights-item {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
