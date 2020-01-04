@@ -142,16 +142,26 @@ h4 {
   max-height: 256px;
 }
 
-.search {
+.input-search-rest {
   border: none;
+  width: 100%;
+  color: rgb(145, 145, 145);
+  border-bottom: 1px solid rgb(220, 220, 220);
+  border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+  line-height: 24px;
+  font-size: 16px;
+  transition: border-bottom 0.1s ease, margin-bottom 0.1s ease;
 }
 
-.search :focus {
-  border: none;
+.input-search-rest::placeholder {
+  color: rgb(196, 196, 196);
+  color: rgba(98, 98, 98, 0.5);
 }
 
-.search :active {
-  border: none;
+.input-search-rest:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(165, 165, 165);
+  margin-bottom: -1px;
 }
 
 /* FOOTER */
