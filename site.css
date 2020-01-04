@@ -225,6 +225,11 @@ h4 {
   padding: 0;
 }
 
+.footer-sublist-links-item a:hover,
+.footer-list-rights-item a:hover {
+  text-decoration: underline;
+}
+
 .footer-list-socials-item {
   display: inline;
 }
