@@ -85,9 +85,15 @@ h4 {
   margin-top: 100px;
 }
 
-/* .rest-container {
-  margin: 0;
-} */
+.main li {
+  list-style: none;
+}
+
+.list-rest {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
 
 .rest-card {
   height: 366px;
@@ -128,7 +134,8 @@ h4 {
 }
 
 .rest-card li:not(:first-child)::before {
-  content: "• ";
+  content: "•";
+  padding-right: 2px;
 }
 
 .rest-card p {
