@@ -197,7 +197,7 @@ h4 {
   width: 100%;
   font-size: 13px;
   line-height: 15px;
-  background: url(media/restaurant/select-arrow.svg) no-repeat 96% center;
+  background: url(media/icons/select-arrow.svg) no-repeat 96% center;
   background-color: #3b3b3b;
   border: none;
   cursor: pointer;
@@ -277,7 +277,7 @@ h4 {
   position: fixed;
   right: 16px;
   bottom: 24px;
-  background: url(media/restaurant/btn-up-arrow.svg) no-repeat center center;
+  background: url(media/icons/btn-up-arrow.svg) no-repeat center center;
   background-color: #49A144;
   width: 64px;
   height: 64px;
