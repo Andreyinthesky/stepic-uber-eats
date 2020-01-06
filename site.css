@@ -270,3 +270,22 @@ h4 {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+/* BUTTON UP */
+
+.btn-up {
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  background: url(media/restaurant/btn-up-arrow.svg) no-repeat center center;
+  background-color: #49A144;
+  width: 64px;
+  height: 64px;
+}
+
+@media only screen and (min-width: 576px) {
+  .btn-up {
+    width: 80px;
+    height: 80px;
+  }
+}
