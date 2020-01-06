@@ -174,11 +174,17 @@ h4 {
 /* FOOTER */
 
 .footer {
-  margin-top: 16px;
+  margin-top: 48px;
   padding-top: 16px;
   background-color: #262626;
   color: #fff;
   font-size: 13px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    margin-top: 80px;
+  }
 }
 
 .footer-section {
@@ -213,6 +219,7 @@ h4 {
 
 .social {
   margin-top: 24px;
+  margin-bottom: 28px;
 }
 
 .hashtag {
