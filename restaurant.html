@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css" />
+  <link rel="stylesheet" href="./site.css" />
+  <title>Трактир "Пушкин"</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row container middle-xs between-xs">
+        <a href="#">
+          <img src="media/logos/logo.svg" alt="homepage" />
+        </a>
+        <nav class="nav">
+          <ul class="header-list-nav row middle-xs">
+            <li>
+              <a href="#" class="link-login">Войти</a>
+            </li>
+            <li>
+              <a href="#" class="link-basket" title="Перейти в корзину">
+                <img src="media/icons/basket.svg" width="19" height="23" alt="Перейти в корзину" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="restaurant-name">
+      <div class="container">
+        <div class="restaurant-name-container row">
+          <div class="restaurant-name-card col-md-5 col-sm-7">
+            <h1 class="restaurant-name-card-header">Трактир «Пушкин»</h1>
+            <div class="restaurant-name-card-body">
+              <ul>
+                <li>₽₽₽</li>
+                <li>Европейская</li>
+              </ul>
+              <span class="deliver-time">40-50 мин</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="restaurant-menu">
+      <h2 class="visually-hidden">Меню</h2>
+      <div class="restaurant-menu-navigation">
+        <ul class="restaurant-menu-navigation-list container">
+          <li class="active">Закуски</li>
+          <li>Салаты</li>
+          <li>Супы</li>
+          <li>Горячие блюда</li>
+          <li>Гарниры</li>
+          <li>Десерты</li>
+        </ul>
+      </div>
+      <div class="container">
+        <h3 class="restaurant-menu-category">Закуски</h3>
+        <ul class="restaurant-menu-food row">
+          <li class="restaurant-menu-food-item col-md-6 col-xs-12">
+            <div class="food-card">
+              <div class="food-card-img">
+                <img src="media/restaurant/food-5.png" width="64" height="64" />
+              </div>
+              <div class="food-card-body">
+                <h4 class="food-name">Сельдь на бородинском хлебе</h4>
+                <p class="food-description">С яйцом и огурцом</p>
+                <span class="food-price">240 ₽</span>
+              </div>
+            </div>
+          </li>
+          <li class="restaurant-menu-food-item col-md-6 col-xs-12">
+            <div class="food-card">
+            </div>
+          </li>
+          <li class="restaurant-menu-food-item col-md-6 col-xs-12">
+            <div class="food-card">
+            </div>
+          </li>
+          <li class="restaurant-menu-food-item col-md-6 col-xs-12">
+            <div class="food-card">
+            </div>
+          </li>
+          <li class="restaurant-menu-food-item col-md-6 col-xs-12">
+            <div class="food-card">
+            </div>
+          </li>
+          <li class="restaurant-menu-food-item col-md-6 col-xs-12">
+            <div class="food-card">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-section">
+        <img src="media/logos/white-logo.svg" width="192" height="21" alt="UberEats" />
+      </div>
+      <div class="footer-section">
+        <div class="row">
+          <div class="col-md-3 col-xs-7">
+            <select class="select-lang" name="language">
+              <option selected>Русский</option>
+              <option>English</option>
+              <option>Deutschland</option>
+              <option>Español</option>
+              <option>Français</option>
+            </select>
+            <div class="social">
+              <a class="hashtag">UberEats</a>
+              <ul class="footer-list-socials">
+                <li class="footer-list-socials-item">
+                  <a href="#"><img src="media/icons/facebook.svg" width="24" height="24" alt="facebook" /></a>
+                </li>
+                <li class="footer-list-socials-item">
+                  <a href="#"><img src="media/icons/twitter.svg" width="24" height="24" alt="twitter" /></a>
+                </li>
+                <li class="footer-list-socials-item">
+                  <a href="#"><img src="media/icons/instagram.svg" width="24" height="24" alt="instagram" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-1">
+            <ul class="footer-list-links row">
+              <li class="footer-list-links-item col-md-6">
+                <ul class="footer-sublist-links">
+                  <li class="footer-sublist-links-item"><a href="#">Об Uber Eats</a></li>
+                  <li class="footer-sublist-links-item"><a href="#">Станьте партнером по доставке</a></li>
+                  <li class="footer-sublist-links-item"><a href="#">Станьте партнером-рестораном</a></li>
+                </ul>
+              </li>
+              <li class="footer-list-links-item col-md-6">
+                <ul class="footer-sublist-links">
+                  <li class="footer-sublist-links-item"><a href="#">Все города</a></li>
+                  <li class="footer-sublist-links-item"><a href="#">Цены</a></li>
+                  <li class="footer-sublist-links-item"><a href="#">Помощь</a></li>
+                  <li class="footer-sublist-links-item"><a href="#">FAQs</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section">
+        <ul class="footer-list-mobileapps row center-xs">
+          <li class="footer-list-mobileapps-item">
+            <a href="#">
+              <img alt="Download on the App Store" src="media/badges/app-store-badge.svg" width="120" height="40" />
+            </a>
+          </li>
+          <li class="footer-list-mobileapps-item">
+            <a href="#">
+              <img alt="Get it on Google Play" src="media/badges/google-play-badge.png" width="135" height="40" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-section footer-section-rights">
+        <div class="row between-xs">
+          <p class="col-sm-4 col-xs-8">© 2020 Uber Technologies Inc.</p>
+          <div class="col-sm-8 col-xs-8">
+            <ul class="footer-list-rights row">
+              <li class="footer-list-rights-item col-sm-6 col-xs-8"><a href="#">Обработка перональных данных</a></li>
+              <li class="footer-list-rights-item col-sm-6 col-xs-8"><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="btn-up">
+  </div>
+</body>
+
+</html>
