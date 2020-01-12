@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   background-color: #fff;
   color: #1d1d1d;
+  height: 100%;
 }
 
 a {
@@ -23,11 +24,22 @@ a {
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 h4 {
   font-size: 22px;
   margin-bottom: 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /* HEADER */
@@ -56,6 +68,7 @@ h4 {
 
 .header {
   position: fixed;
+  z-index: 1000;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -82,7 +95,8 @@ h4 {
 /* MAIN */
 
 .main {
-  margin-top: 100px;
+  margin-top: 72px;
+  flex: 1 0 auto;
 }
 
 .main li {
@@ -171,10 +185,293 @@ h4 {
   margin-bottom: -1px;
 }
 
+section.restaurant-name {
+  width: 100%;
+  height: 255px;
+  background-image: url(media/restaurant/restaurant-main.png);
+  background-position: 0px 50%;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.restaurant-name .container {
+  height: 100%;
+}
+
+.restaurant-name-container {
+  height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.restaurant-name-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 180px;
+  padding: 24px;
+  margin-top: auto;
+  margin-bottom: -56px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+}
+
+.restaurant-name-card-header {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.restaurant-name-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 auto;
+}
+
+.restaurant-name-card-body ul {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 16px;
+  color: #626262;
+  padding: 0;
+  line-height: 16px;
+}
+
+.restaurant-name-card-body ul > li {
+  display: inline;
+  list-style: none;
+}
+
+.restaurant-name-card li:not(:first-child)::before {
+  content: "•";
+  padding-right: 2px;
+}
+
+.deliver-time {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 14px;
+  background-color: #1d1d1d;
+  color: #fff;
+  border-radius: 16px;
+}
+
+.restaurant-menu > .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-menu-navigation {
+  height: 80px;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  border-bottom: 1px solid rgb(220, 220, 220);
+  display: none;
+}
+
+.restaurant-menu-navigation-list {
+  height: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.restaurant-menu-navigation-list > li {
+  height: 100%;
+  padding: 32px 0px;
+  color: #626262;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.restaurant-menu-navigation-list > li.active {
+  color: #327430;
+}
+
+.restaurant-menu-navigation-list > li:not(:first-child) {
+  margin-left: 40px;
+}
+
+.restaurant-menu-food-header {
+  align-self: center;
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 56px;
+  margin-top: 112px;
+}
+
+.restaurant-menu-food-header::after {
+  position: relative;
+  top: 12px;
+  left: calc(50% - 25px);
+  content: "";
+  background-color: #757575;
+  display: block;
+  height: 1px;
+  width: 50px;
+}
+
+.restaurant-menu-food-list {
+  padding-left: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.restaurant-menu-food-list-item {
+  margin-bottom: 16px;
+}
+
+.food-card {
+  position: relative;
+  height: 102px;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  border-bottom: 1px solid rgb(220, 220, 220);
+  border-radius: 2px;
+}
+
+.food-card:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.food-card-body {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+  padding-right: 32px;
+  height: 100%;
+  margin-right: 30%;
+  white-space: nowrap;
+}
+
+.food-card-photo {
+  position: absolute;
+  width: 30%;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.food-card-photo img {
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.food-card .food-name {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.food-card .food-description {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 20px;
+  color: #626262;
+  visibility: hidden;
+}
+
+.food-card:hover .food-description {
+  visibility: visible;
+}
+
+.food-card .food-price {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  display: block;
+  margin-top: auto;
+}
+
+@media only screen and (min-width: 556px) {
+  .restaurant-name-card-body ul {
+    margin: 0;
+  }
+
+  section.restaurant-name {
+    height: 364px;
+  }
+
+  .restaurant-name-card {
+    padding: 38px;
+    align-items: stretch;
+    margin-bottom: auto;
+    height: 204px;
+  }
+
+  .restaurant-name-card-body {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .restaurant-name-card-header {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .restaurant-menu-food-header {
+    align-self: flex-start;
+    margin-top: 56px;
+    margin-bottom: 32px;
+  }
+
+  .restaurant-menu-food-header::after {
+    display: none;
+  }
+
+  .food-card {
+    border: 1px solid rgba(117, 117, 117, 0.2);
+    border: 1px solid rgb(220, 220, 220);
+  }
+
+  .food-card-body {
+    padding: 16px 24px;
+  }
+
+  .food-card .food-name {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .restaurant-menu-navigation {
+    display: block;
+  }
+
+  .food-card {
+    height: 160px;
+  }
+
+  .food-card-body {
+    padding: 16px;
+  }
+
+  .restaurant-menu-food-list-item {
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .restaurant-menu-food-list-item {
+    margin-bottom: 48px;
+  }
+}
+
 /* FOOTER */
 
 .footer {
-  margin-top: 48px;
+  flex-shrink: 0;
+  margin-top: 24px;
   padding-top: 16px;
   background-color: #262626;
   color: #fff;
@@ -183,7 +480,13 @@ h4 {
 
 @media only screen and (min-width: 768px) {
   .footer {
-    margin-top: 80px;
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .footer {
+    margin-top: 32px;
   }
 }
 
