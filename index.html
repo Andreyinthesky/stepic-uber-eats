@@ -12,6 +12,10 @@
 </head>
 
 <body>
+  <a href="#top">
+    <div class="btn-up">
+    </div>
+  </a>
   <header class="header">
     <div class="container">
       <div class="row container middle-xs between-xs">
@@ -34,33 +38,137 @@
     </div>
   </header>
   <main class="main container">
-    <div class="row">
-      <div class="col-md">
-        <input class="input-search-rest" type="text" placeholder="Поиск по ресторанам и кухням" />
-      </div>
-    </div>
-    <h4>Рестораны в Москве</h4>
-    <ul class="list-rest row between-xs">
-      <li class="list-rest-item rest-card col-md-4 col-sm-6">
-        <div class="rest-card-container">
-          <img src="media/stores/mc.png" width="368" height="256" />
-          <h5>Макдоналдс — Газетный</h5>
-          <ul>
-            <li>₽₽</li>
-            <li>Бургеры</li>
-          </ul>
-          <p>25-35 мин</p>
-        </div>
-      </li>
-      <li class="list-rest-item rest-card col-md-4 col-sm-6"></li>
-      <li class="list-rest-item rest-card col-md-4 col-sm-6"></li>
-      <li class="list-rest-item rest-card col-md-4 col-sm-6"></li>
-      <li class="list-rest-item rest-card col-md-4 col-sm-6"></li>
-      <li class="list-rest-item rest-card col-md-4 col-sm-6"></li>
-      <li class="list-rest-item rest-card col-md-4 col-sm-6"></li>
-      <li class="list-rest-item rest-card col-md-4 col-sm-6"></li>
-      <li class="list-rest-item rest-card col-md-4 col-sm-6"></li>
-    </ul>
+    <section class="restaurant-search">
+      <h1 class="visually-hidden">Поиск ресторанов</h1>
+      <input class="restaurant-search-input" type="text" placeholder="Поиск по ресторанам и кухням" />
+    </section>
+    <section class="restaurant-search-results">
+      <h2 class="restaurant-search-results-header">Рестораны в Москве</h2>
+      <ul class="restaurant-list row between-xs">
+        <li class="restaurant-list-item  col-lg-4 col-sm-6">
+          <a href="restaurant.html">
+            <div class="restaurant-card">
+              <img src="media/stores/mc.png" width="368" height="256" />
+              <h3 class="restaurant-card-header">Макдоналдс &ndash; Газетный</h3>
+              <ul class="keywords-list">
+                <li>₽₽</li>
+                <li>Бургеры</li>
+              </ul>
+              <span class="deliver-time">25-35 мин</span>
+            </div>
+          </a>
+        </li>
+        <li class="restaurant-list-item col-lg-4 col-sm-6">
+          <a href="restaurant.html">
+            <div class="restaurant-card">
+              <img src="media/stores/dimsum.png" width="368" height="256" />
+              <h3 class="restaurant-card-header">DimSum & Co &ndash; ЦДМ</h3>
+              <ul class="keywords-list">
+                <li>₽</li>
+                <li>Японская</li>
+                <li>Китайская</li>
+                <li>Азиатская</li>
+              </ul>
+              <span class="deliver-time">40-50 мин</span>
+            </div>
+          </a>
+        </li>
+        <li class="restaurant-list-item col-lg-4 col-sm-6">
+          <a href="restaurant.html">
+            <div class="restaurant-card">
+              <img src="media/stores/dvizhok.png" width="368" height="256" />
+              <h3 class="restaurant-card-header">ДвижОК &ndash; Манежная</h3>
+              <ul class="keywords-list">
+                <li>₽</li>
+                <li>Американская</li>
+                <li>Европейская</li>
+              </ul>
+              <span class="deliver-time">35-45 мин</span>
+            </div>
+          </a>
+        </li>
+        <li class="restaurant-list-item col-lg-4 col-sm-6">
+          <a href="restaurant.html">
+            <div class="restaurant-card">
+              <img src="media/stores/nya.png" width="368" height="256" />
+              <h3 class="restaurant-card-header">НЯ &ndash; NHA</h3>
+              <ul class="keywords-list">
+                <li>₽₽</li>
+                <li>Вьетнамская</li>
+              </ul>
+              <span class="deliver-time">30-40 мин</span>
+            </div>
+          </a>
+        </li>
+        <li class="restaurant-list-item col-lg-4 col-sm-6">
+          <a href="restaurant.html">
+            <div class="restaurant-card">
+              <img src="media/stores/tochka_dzi.png" width="368" height="256" />
+              <h3 class="restaurant-card-header">Точка Дзы &ndash; Цветной</h3>
+              <ul class="keywords-list">
+                <li>₽₽</li>
+                <li>Вьетнамская</li>
+              </ul>
+              <span class="deliver-time">40-50 мин</span>
+            </div>
+          </a>
+        </li>
+        <li class="restaurant-list-item col-lg-4 col-sm-6">
+          <a href="restaurant.html">
+            <div class="restaurant-card">
+              <img src="media/stores/cinnabon.png" width="368" height="256" />
+              <h3 class="restaurant-card-header">Cinnabon</h3>
+              <ul class="keywords-list">
+                <li>₽</li>
+                <li>Выпечка</li>
+                <li>Десерты</li>
+                <li>Капкейки</li>
+              </ul>
+              <span class="deliver-time">25-35 мин</span>
+            </div>
+          </a>
+        </li>
+        <li class="restaurant-list-item col-lg-4 col-sm-6">
+          <a href="restaurant.html">
+            <div class="restaurant-card">
+              <img src="media/stores/pizzelove.png" width="368" height="256" />
+              <h3 class="restaurant-card-header">PIZZELOVE</h3>
+              <ul class="keywords-list">
+                <li>₽₽</li>
+                <li>Пицца</li>
+              </ul>
+              <span class="deliver-time">15-25 мин</span>
+            </div>
+          </a>
+        </li>
+        <li class="restaurant-list-item col-lg-4 col-sm-6">
+          <a href="restaurant.html">
+            <div class="restaurant-card">
+              <img src="media/stores/zyu_cafe.png" width="368" height="256" />
+              <h3 class="restaurant-card-header">Zю кафе &ndash; Тверская</h3>
+              <ul class="keywords-list">
+                <li>₽₽</li>
+                <li>Японская</li>
+              </ul>
+              <span class="deliver-time">25-35 мин</span>
+            </div>
+          </a>
+        </li>
+        <li class="restaurant-list-item col-lg-4 col-sm-6">
+          <a href="restaurant.html">
+            <div class="restaurant-card">
+              <img src="media/stores/barbq_cafe.png" width="368" height="256" />
+              <h3 class="restaurant-card-header">Bar BQ Cafe &ndash; Манежная</h3>
+              <ul class="keywords-list">
+                <li>₽₽₽</li>
+                <li>Европейская</li>
+              </ul>
+              <span class="deliver-time">30-40 мин</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -140,8 +248,6 @@
       </div>
     </div>
   </footer>
-  <div class="btn-up">
-  </div>
 </body>
 
 </html>

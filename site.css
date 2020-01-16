@@ -29,11 +29,6 @@ body {
   flex-direction: column;
 }
 
-h4 {
-  font-size: 22px;
-  margin-bottom: 0px;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -103,37 +98,74 @@ h4 {
   list-style: none;
 }
 
-.list-rest {
+/* INDEX PAGE */
+
+.restaurant-search-input {
+  border: none;
+  width: 100%;
+  height: 48px;
+  padding: 0;
+  padding-left: 32px;
+  margin: 56px 0;
+  color: rgb(145, 145, 145);
+  font-size: 16px;
+  background: url(media/icons/search.svg) no-repeat 0 12px;
+  background-size: 24px;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+  transition: border-bottom 0.2s ease;
+}
+
+.restaurant-search-input::placeholder {
+  transition: color 0.2s ease;
+  color: rgb(196, 196, 196);
+  color: rgba(98, 98, 98, 0.5);
+}
+
+.restaurant-search-input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(165, 165, 165);
+}
+
+.restaurant-search-input:focus::placeholder {
+  color: #fff;
+}
+
+.restaurant-search-results {
+  margin-bottom: 48px;
+}
+
+.restaurant-search-results-header {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.restaurant-list {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
 }
 
-.rest-card {
-  height: 366px;
-  margin-top: 16px;
-  padding: 0 8px;
-  border: 1px solid olive;
+.restaurant-list-item {
+  margin-bottom: 16px;
 }
 
-.rest-card-container {
-  cursor: pointer;
-  height: 100%;
+.restaurant-card {
+  padding-bottom: 20px;
 }
 
-.rest-card-container:hover {
+.restaurant-card:hover {
   background-color: #f2f2f2;
 }
 
-.rest-card h5 {
+.restaurant-card .restaurant-card-header {
   font-size: 16px;
   margin-top: 16px;
   margin-bottom: 2px;
   line-height: 24px;
 }
 
-.rest-card ul {
-  display: inline-block;
+.restaurant-card .keywords-list {
   font-size: 14px;
   color: #626262;
   padding: 0;
@@ -141,49 +173,29 @@ h4 {
   line-height: 21px;
 }
 
-.rest-card li {
+.keywords-list > li {
   margin: 2px 0;
   display: inline;
-  list-style: none;
 }
 
-.rest-card li:not(:first-child)::before {
+.keywords-list > li:not(:first-child)::before {
   content: "•";
   padding-right: 2px;
 }
 
-.rest-card p {
+.restaurant-card .deliver-time {
   margin: 0;
   font-size: 13px;
+  line-height: initial;
 }
 
-.rest-card img {
+.restaurant-card img {
   display: block;
   width: 100%;
   max-height: 256px;
 }
 
-.input-search-rest {
-  border: none;
-  width: 100%;
-  color: rgb(145, 145, 145);
-  border-bottom: 1px solid rgb(220, 220, 220);
-  border-bottom: 1px solid rgba(117, 117, 117, 0.3);
-  line-height: 24px;
-  font-size: 16px;
-  transition: border-bottom 0.1s ease, margin-bottom 0.1s ease;
-}
-
-.input-search-rest::placeholder {
-  color: rgb(196, 196, 196);
-  color: rgba(98, 98, 98, 0.5);
-}
-
-.input-search-rest:focus {
-  outline: none;
-  border-bottom: 2px solid rgb(165, 165, 165);
-  margin-bottom: -1px;
-}
+/* RESTAURANT PAGE */
 
 section.restaurant-name {
   width: 100%;
@@ -251,7 +263,7 @@ section.restaurant-name {
   padding-right: 2px;
 }
 
-.deliver-time {
+.restaurant-name-card .deliver-time {
   display: inline-block;
   padding: 8px 16px;
   font-size: 12px;
