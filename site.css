@@ -585,6 +585,7 @@ section.restaurant-name {
 
 .btn-up {
   position: fixed;
+  z-index: 1000;
   right: 16px;
   bottom: 24px;
   background: url(media/icons/btn-up-arrow.svg) no-repeat center center;
@@ -593,7 +594,7 @@ section.restaurant-name {
   height: 64px;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 556px) {
   .btn-up {
     width: 80px;
     height: 80px;
