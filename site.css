@@ -478,18 +478,6 @@ section.restaurant-name {
   font-size: 13px;
 }
 
-@media only screen and (min-width: 768px) {
-  .footer {
-    margin-top: 16px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .footer {
-    margin-top: 32px;
-  }
-}
-
 .footer-section {
   border-bottom: 1px solid #fff;
   padding-bottom: 40px;
@@ -502,11 +490,13 @@ section.restaurant-name {
   -ms-appearance: none;
   appearance: none;
   padding: 12px 8px;
+  padding-left: 32px;
   margin-bottom: 8px;
   width: 100%;
   font-size: 13px;
   line-height: 15px;
-  background: url(media/icons/select-arrow.svg) no-repeat 96% center;
+  background: url(media/icons/select-arrow.svg) no-repeat 96% center,
+    url(media/icons/world.svg) no-repeat 8px center;
   background-color: #3b3b3b;
   border: none;
   cursor: pointer;
@@ -555,12 +545,17 @@ section.restaurant-name {
   margin-left: 8px;
 }
 
-.footer-list-links-item:not(:last-child) {
-  margin-bottom: 24px;
+.footer-list-links {
+  margin-top: 12px;
+  margin-bottom: 0;
 }
 
-.footer-sublist-links-item:not(:first-child) {
-  margin-top: 24px;
+.footer-list-links:last-child {
+  margin-bottom: -24px;
+}
+
+.footer-sublist-links-item {
+  margin-bottom: 24px;
 }
 
 .footer-list-mobileapps-item img {
@@ -579,6 +574,18 @@ section.restaurant-name {
 .footer-list-rights-item {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .footer {
+    margin-top: 32px;
+  }
 }
 
 /* BUTTON UP */
