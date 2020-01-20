@@ -776,14 +776,23 @@ section.restaurant-name {
 /* BUTTON UP */
 
 .btn-up {
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
   z-index: 1000;
+  cursor: pointer;
   right: 16px;
   bottom: 24px;
   background: url(media/icons/btn-up-arrow.svg) no-repeat center center;
   background-color: #49A144;
   width: 64px;
   height: 64px;
+  transition: 0.5s;
+}
+
+.btn-up.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media only screen and (min-width: 556px) {
